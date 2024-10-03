@@ -1,0 +1,14 @@
+<div class="review-list">
+  <h1 class="review-list__title">K-Drama Recommendations</h1>
+  <div class="review" *ngFor="let drama of dramas">
+    <h2 class="review__title">{{ drama.title }}</h2>
+    <p class="review__description">{{ drama.description }}</p>
+    <div class="review__details">
+      <span class="review__rating review__rating--{{drama.ratingClass}}">
+        Rating: {{ drama.rating }}/10
+      </span>
+      <span class="review__genre">{{ drama.genre }}</span>
+    </div>
+    <button class="review__button review__button--primary">Read More</button>
+  </div>
+</div>
